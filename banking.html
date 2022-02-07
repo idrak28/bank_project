@@ -5,8 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banking Page</title>
+    <!-- Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Banking Site</h1>
+    <header>
+        <h1 class="text-5xl text-center font-bold mt-8">
+        Lets get some <span class="text-purple-800">MONEY!!!</span> ! 
+        </h1>
+    </header>
+    <main class="w-3/4 mx-auto" >
+        <section>
+            <div class="grid grid-cols-3  gap-4 m">
+                <div class="bg-blue-500 p-8 rounded">
+                    <h3 class="text-black-800 text-5xl ">Deposit</h3>
+                    <h4 class="text-black-800 text-4xl">$00</h4>
+                </div>
+                <div class="bg-green-500 p-8 rounded">
+                    <h3 class="text-black-800 text-5xl ">Withdrow</h3>
+                    <h4 class="text-black-800 text-4xl">$00</h4>
+                </div>
+                <div class="bg-yellow-500 p-8 rounded">
+                    <h3 class="text-black-800 text-5xl ">Balance</h3>
+                    <h4 class="text-black-800 text-4xl">$1200</h4>
+                </div>
+                
+            </div>
+        </section>
+        <!-- Deposit$withdrow -->
+        <section class="mt-8 ">
+            <div class="grid grid-cols-2 gap-2 ">
+                <!-- Deposit -->
+                <div class="bg-blue-500 p-8 rounded">
+                    <h3 class="test-3xl">Please deposit</h3>
+                    <div>
+                        <input id="deposit-amount" class="border-2 border-gray-400 rounded w-3/4 mb-4 px-2" type="text" placeholder=" your ammount">
+                        <br>
+                        
+                        <button id="deposit-submit"class="bg-blue-700 px-4 rounded py-2 mt-4 font-medium">Deposit</button>
+                    </div>
+                </div>
+                <!-- withdrow -->
+                <div class="bg-pink-500 p-8 rounded">
+                    <h3 class="test-3xl">Please withdrow</h3>
+                    <div>
+                        <input id="withdrow-amount" class="border-2 border-gray-400 rounded w-3/4 mb-4 px-2" type="text" placeholder=" your ammount">
+                        <br>
+                        
+                        <button id="withdrow-submit"class="bg-pink-700 px-4 rounded py-2 mt-4 font-medium">Withdrow</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

@@ -5,7 +5,9 @@ document.getElementById('login-submit').addEventListener('click', function(){
     const password =document.getElementById('password');
     const userPassword =password.value;
     if(userEmail=="hello"&& userPassword=="world"){
+        //this is for going new page
         window.location.href='banking.html';
+        //
     }
 
 })
