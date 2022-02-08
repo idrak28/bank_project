@@ -17,17 +17,21 @@
     <main class="w-3/4 mx-auto" >
         <section>
             <div class="grid grid-cols-3  gap-4 m">
+                <!-- deposit -->
                 <div class="bg-blue-500 p-8 rounded">
                     <h3 class="text-black-800 text-5xl ">Deposit</h3>
-                    <h4 class="text-black-800 text-4xl">$00</h4>
+                    <h4 class="text-black-800 text-4xl">$<span id="d-money">00</span></h4>
                 </div>
+                <!-- withdrow -->
                 <div class="bg-green-500 p-8 rounded">
                     <h3 class="text-black-800 text-5xl ">Withdrow</h3>
-                    <h4 class="text-black-800 text-4xl">$00</h4>
+                    <h4 class="text-black-800 text-4xl">$<span id="withdrow-money">00</span></h4>
+                    
                 </div>
+                <!-- Balance -->
                 <div class="bg-yellow-500 p-8 rounded">
                     <h3 class="text-black-800 text-5xl ">Balance</h3>
-                    <h4 class="text-black-800 text-4xl">$1200</h4>
+                    <h4 class="text-black-800 text-4xl">$<span id="total-money">1250</span></h4>
                 </div>
                 
             </div>
@@ -58,5 +62,7 @@
             </div>
         </section>
     </main>
+   <!--  script  -->
+    <script src="banking.js"></script>
 </body>
 </html>
