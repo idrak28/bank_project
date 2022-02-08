@@ -28,10 +28,11 @@ const banlance=document.getElementById('total-money');
 //main Balance string to float convert
  const Bamount= parseFloat(banlance.innerText);
  banlance.innerText = Bamount -wAmount;
- 
+
  //clear withdrow input filed
 
 document.getElementById('withdrow-amount').value ="";
 
   })
     
+  //test
