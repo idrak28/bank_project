@@ -19,19 +19,19 @@ const banlance=document.getElementById('total-money');
     });
 
  //handle withdrow amount 
-  document.getElementById('withdrow-submit').addEventListener('click', function(){
-     const wAmount =parseFloat(document.getElementById('withdrow-amount').value ) ;
-     const WTotalAmount =parseFloat(document.getElementById('withdrow-money').innerText)
-     document.getElementById('withdrow-money').innerText=wAmount + WTotalAmount;
-     // withdrow  money minus form main Balance
+  document.getElementById('withdraw-submit').addEventListener('click', function(){
+     const wAmount =parseFloat(document.getElementById('withdraw-amount').value ) ;
+     const WTotalAmount =parseFloat(document.getElementById('withdraw-money').innerText)
+     document.getElementById('withdraw-money').innerText=wAmount + WTotalAmount;
+     // withdraw  money minus form main Balance
      const banlance=document.getElementById('total-money');
 //main Balance string to float convert
  const Bamount= parseFloat(banlance.innerText);
  banlance.innerText = Bamount -wAmount;
 
- //clear withdrow input filed
+ //clear withdraw input filed
 
-document.getElementById('withdrow-amount').value ="";
+document.getElementById('withdraw-amount').value ="";
 
   })
     
